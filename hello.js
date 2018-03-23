@@ -14,7 +14,7 @@ var server = http.createServer(function (request, response) {
     
     var pathname = url.parse(request.url).pathname;
     var filepath = path.join(root, pathname);
-pathname.
+    
     fs.stat(filepath, function(err, stats) {
         if (!err && stats.isFile()) {
             ret(filepath, request, response);

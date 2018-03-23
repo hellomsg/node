@@ -17,3 +17,13 @@ var f = fib(5);
 for (var x of f) {
     console.log(`out: ${x}`);
 }
+
+function* next_id() {
+    var id = 1;
+    while(1) {
+        yield id;
+        id++;
+    }
+    return;    
+}
+
